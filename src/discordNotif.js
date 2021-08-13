@@ -10,6 +10,11 @@ const discordNotif = (body) => {
 
     webhookClient.send({
         content: `<@&${process.env.DISCORD_ROLE_ID}> ${message}`,
+    }).then(res => {
+        console.log(`Message successfully sent to <@&${process.env.DISCORD_ROLE_ID}>`)
+    }).catch(e => {
+        console.log("Error");
+        console.error(e);
     });
 };
 
