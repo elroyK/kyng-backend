@@ -20,5 +20,5 @@ app.post('/new-client', cors(corsOptions), (req, res) => {
 });
 
 app.listen((port), () => {
-    console.log(`Example app listening at http://localhost:${port}`);
+    console.log(`Welcome to Kyng API, listening on port ${port}`);
 });
